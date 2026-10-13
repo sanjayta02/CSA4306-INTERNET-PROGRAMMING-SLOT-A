@@ -1,0 +1,18 @@
+# Test checklist
+- [ ] Open index.html on desktop and mobile widths.
+- [ ] Register/login with a fictional demo account.
+- [ ] Search buses using route and date filters.
+- [ ] Select a bus and several seats.
+- [ ] Enter passenger name and age for each selected seat.
+- [ ] Confirm booking and view it in dashboard.
+- [ ] Check that a seat already used by another booking is unavailable for the same bus/date.
+- [ ] Cancel a booking from dashboard.
+- [ ] Update profile details.
+- [ ] Test change-password demo utility.
+- [ ] Add a bus in admin panel.
+- [ ] Update category, fare, capacity and departure.
+- [ ] Edit/cancel a booking from admin.
+- [ ] Publish and delete news.
+- [ ] Post and moderate comments.
+- [ ] Export report CSV.
+- [ ] Submit contact form and check demo response.
