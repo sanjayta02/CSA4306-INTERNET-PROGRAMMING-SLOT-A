@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StayEase | Hotel Booking</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-icon">S</span> StayEase</a>
+<nav><a href="index.html">Home</a><a href="rooms.html">Rooms</a><a href="travel.html">Travel Guide</a><a href="contact.html">Contact</a><a href="login.html" class="nav-login">Login / Register</a><a href="admin.html" class="admin-link">Admin</a></nav>
+</header>
+<main>
+<section class="hero"><div class="hero-copy"><p class="eyebrow">YOUR NEXT STAY STARTS HERE</p><h1>Find a stay that<br><em>feels like yours.</em></h1><p>Explore comfortable rooms, transparent prices, and simple booking management in one place.</p><a class="button button-light" href="#search">Explore stays <span>↗</span></a></div><div class="hero-note"><span>✦</span> Thoughtful stays.<br>Memorable journeys.</div></section>
+<section class="search-panel" id="search"><div><label for="destination">Destination / hotel</label><input id="destination" placeholder="Where are you going?" value="Chennai"></div><div><label for="checkin">Check-in</label><input id="checkin" type="date"></div><div><label for="checkout">Check-out</label><input id="checkout" type="date"></div><div><label for="guests">Guests</label><select id="guests"><option>1 guest</option><option selected>2 guests</option><option>3 guests</option><option>4 guests</option></select></div><button class="button" onclick="searchRooms()">Search rooms ↗</button></section>
+<section class="section"><div class="section-heading"><div><p class="eyebrow">MADE FOR YOUR MOMENTS</p><h2>Choose your kind of comfort</h2></div><a href="rooms.html" class="text-link">View all rooms ↗</a></div><div class="room-grid" id="featured-rooms"></div></section>
+<section class="trust-strip"><div><strong>4</strong><span>Room categories</span></div><div><strong>24/7</strong><span>Guest assistance</span></div><div><strong>Simple</strong><span>Booking management</span></div><div><strong>Responsive</strong><span>On every device</span></div></section>
+<section class="section split"><div><p class="eyebrow">A BETTER WAY TO STAY</p><h2>Little details.<br><em>Big difference.</em></h2><p class="muted">From solo escapes to family trips, explore room options designed around your needs. Review amenities, check dates, and keep your plans organized.</p><a class="button" href="rooms.html">Explore room types ↗</a></div><div class="feature-list"><article><span>01</span><div><h3>Clear room choices</h3><p>Compare room capacity, amenities, and nightly rates before deciding.</p></div></article><article><span>02</span><div><h3>Booking at your pace</h3><p>Review your reservations and manage eligible changes from your dashboard.</p></div></article><article><span>03</span><div><h3>Help when you need it</h3><p>Find contact information, FAQs, and useful local travel guidance.</p></div></article></div></section>
+</main><footer class="footer"><a class="brand" href="index.html"><span class="brand-icon">S</span> StayEase</a><p>A student project demonstrating an online hotel booking workflow.</p><div><a href="privacy.html">Privacy policy</a><a href="contact.html">Contact</a><a href="faq.html">FAQs</a></div><small>© 2026 StayEase · Educational demonstration only</small></footer>
+<script src="js/app.js"></script></body></html>
