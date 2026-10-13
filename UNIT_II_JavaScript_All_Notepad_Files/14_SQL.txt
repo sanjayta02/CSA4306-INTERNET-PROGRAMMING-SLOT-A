@@ -1,0 +1,45 @@
+TOPIC 14: SQL (STRUCTURED QUERY LANGUAGE)
+2-MARK DEFINITION:
+SQL is a language used to create, retrieve, insert, update, and delete data in relational databases.
+
+IMPORTANT:
+Run SQL in MySQL/phpMyAdmin (for example, in XAMPP). SQL code does not run directly in the browser.
+
+STEP 1 - CREATE DATABASE AND TABLE
+CREATE DATABASE college;
+USE college;
+
+CREATE TABLE student (
+    id INT PRIMARY KEY,
+    name VARCHAR(50),
+    department VARCHAR(20),
+    marks INT
+);
+
+EXAMPLE 1 - INSERT RECORDS
+INSERT INTO student (id, name, department, marks)
+VALUES (1, 'Arun', 'CSE', 85);
+
+INSERT INTO student (id, name, department, marks)
+VALUES (2, 'Bala', 'IT', 90);
+
+INSERT INTO student (id, name, department, marks)
+VALUES (3, 'Devi', 'CSE', 78);
+
+EXAMPLE 2 - SELECT RECORDS
+SELECT * FROM student;
+
+SELECT name, marks
+FROM student
+WHERE department = 'CSE';
+
+EXAMPLE 3 - UPDATE AND DELETE
+UPDATE student
+SET marks = 95
+WHERE id = 1;
+
+DELETE FROM student
+WHERE id = 3;
+
+WARNING:
+Always check the WHERE condition before UPDATE or DELETE. Without WHERE, all rows can be affected.

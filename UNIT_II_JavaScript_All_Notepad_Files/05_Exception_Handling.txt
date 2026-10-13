@@ -1,0 +1,58 @@
+TOPIC 5: EXCEPTION HANDLING
+2-MARK DEFINITION:
+Exception handling manages runtime errors using try, catch, finally, and throw so that errors can be handled properly.
+
+EXAMPLE 1 - Save as exception1.html
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+try {
+    document.write(unknownVariable);
+} catch (error) {
+    document.write("An error occurred.");
+}
+</script>
+</body>
+</html>
+
+EXAMPLE 2 - Save as exception2.html
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+try {
+    let a = 10;
+    let b = 0;
+    if (b === 0) {
+        throw new Error("Division by zero is not allowed");
+    }
+    document.write(a / b);
+} catch (error) {
+    document.write(error.message);
+} finally {
+    document.write("<br>Program completed.");
+}
+</script>
+</body>
+</html>
+
+EXAMPLE 3 - Save as exception3.html
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function checkAge(age) {
+    try {
+        if (age < 18) {
+            throw new Error("Age must be 18 or above");
+        }
+        document.write("Eligible");
+    } catch (error) {
+        document.write(error.message);
+    }
+}
+checkAge(16);
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+TOPIC 12: FUNCTIONS AND EXTERNAL JAVASCRIPT FILES
+2-MARK DEFINITION:
+A function is a reusable block of code that performs a particular task. An external JavaScript file stores code in a separate .js file linked to HTML using the script element.
+
+EXAMPLE 1 - FUNCTION WITHOUT PARAMETERS - Save as function1.html
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function greet() {
+    document.write("Welcome to JavaScript!");
+}
+greet();
+</script>
+</body>
+</html>
+
+EXAMPLE 2 - FUNCTION WITH PARAMETERS - Save as function2.html
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function multiply(a, b) {
+    return a * b;
+}
+let result = multiply(5, 4);
+document.write("Result = " + result);
+</script>
+</body>
+</html>
+
+EXAMPLE 3 - EXTERNAL JAVASCRIPT FILE
+Create TWO separate files in the SAME folder.
+
+FILE A: index.html
+<!DOCTYPE html>
+<html>
+<body>
+<h2>External JavaScript Example</h2>
+<button onclick="showMessage()">Click Me</button>
+<script src="script.js"></script>
+</body>
+</html>
+
+FILE B: script.js
+function showMessage() {
+    alert("External JavaScript file is working!");
+}
+
+INSTRUCTIONS:
+1. Save the HTML code as index.html.
+2. Save the JavaScript code as script.js.
+3. Put both files in the same folder.
+4. Open index.html in a browser and click the button.

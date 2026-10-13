@@ -1,0 +1,54 @@
+TOPIC 9: DHTML WITH JAVASCRIPT
+2-MARK DEFINITION:
+DHTML (Dynamic HTML) combines HTML, CSS, JavaScript, and the DOM to make web page content or appearance change dynamically without reloading the whole page.
+
+EXAMPLE 1 - CHANGE BACKGROUND - Save as dhtml1.html
+<!DOCTYPE html>
+<html>
+<body id="page">
+<h2>Dynamic HTML Example</h2>
+<button onclick="changeBackground()">Change Background</button>
+<script>
+function changeBackground() {
+    document.getElementById("page").style.backgroundColor = "lightblue";
+}
+</script>
+</body>
+</html>
+
+EXAMPLE 2 - SHOW AND HIDE - Save as dhtml2.html
+<!DOCTYPE html>
+<html>
+<body>
+<p id="details" style="display:none">
+This is detailed information about JavaScript.
+</p>
+<button onclick="showDetails()">Show Details</button>
+<button onclick="hideDetails()">Hide Details</button>
+<script>
+function showDetails() {
+    document.getElementById("details").style.display = "block";
+}
+function hideDetails() {
+    document.getElementById("details").style.display = "none";
+}
+</script>
+</body>
+</html>
+
+EXAMPLE 3 - CREATE ELEMENT - Save as dhtml3.html
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Student List</h2>
+<button onclick="addStudent()">Add Student</button>
+<ul id="students"></ul>
+<script>
+function addStudent() {
+    let item = document.createElement("li");
+    item.textContent = "New Student";
+    document.getElementById("students").appendChild(item);
+}
+</script>
+</body>
+</html>

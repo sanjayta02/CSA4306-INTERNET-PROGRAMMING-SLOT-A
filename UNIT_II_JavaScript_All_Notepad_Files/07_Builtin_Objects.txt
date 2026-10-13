@@ -1,0 +1,42 @@
+TOPIC 7: BUILT-IN OBJECTS
+2-MARK DEFINITION:
+Built-in objects are predefined JavaScript objects that provide ready-made methods and properties, such as String, Math, Array, Date, and JSON.
+
+EXAMPLE 1 - STRING OBJECT - Save as builtin1.html
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+let name = "javascript";
+document.write(name.toUpperCase() + "<br>");
+document.write(name.length + "<br>");
+document.write(name.toLowerCase());
+</script>
+</body>
+</html>
+
+EXAMPLE 2 - MATH OBJECT - Save as builtin2.html
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+document.write(Math.round(4.6) + "<br>");
+document.write(Math.sqrt(25) + "<br>");
+document.write(Math.max(10, 20, 30));
+</script>
+</body>
+</html>
+
+EXAMPLE 3 - ARRAY OBJECT - Save as builtin3.html
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+let fruits = ["Apple", "Banana", "Mango"];
+document.write(fruits[0] + "<br>");
+fruits.push("Orange");
+document.write(fruits.join(", ") + "<br>");
+document.write("Total: " + fruits.length);
+</script>
+</body>
+</html>

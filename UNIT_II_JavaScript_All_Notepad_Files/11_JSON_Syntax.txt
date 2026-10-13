@@ -1,0 +1,38 @@
+TOPIC 11: JSON SYNTAX
+2-MARK DEFINITION:
+JSON syntax defines the rules for representing data using objects, arrays, key-value pairs, strings, numbers, Boolean values, and null.
+
+RULES:
+1. Keys and string values use double quotation marks.
+2. Objects use curly braces: { }.
+3. Arrays use square brackets: [ ].
+4. A colon separates a key and value.
+5. Commas separate items; do not add a trailing comma.
+6. JSON does not support comments or functions.
+
+EXAMPLE 1 - Save as jsonsyntax1.json
+{
+    "name": "Kumar",
+    "age": 25,
+    "student": true
+}
+
+EXAMPLE 2 - Save as jsonsyntax2.json
+[
+    "HTML",
+    "CSS",
+    "JavaScript"
+]
+
+EXAMPLE 3 - Save as jsonsyntax3.json
+{
+    "student": {
+        "name": "Arun",
+        "department": "CSE"
+    },
+    "marks": [80, 90, 85],
+    "result": true,
+    "remarks": null
+}
+
+NOTE: These .json files are data files, not web pages. Open them in a text editor or load them from a program.

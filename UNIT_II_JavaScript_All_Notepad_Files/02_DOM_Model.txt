@@ -1,0 +1,45 @@
+TOPIC 2: JAVASCRIPT DOM MODEL
+2-MARK DEFINITION:
+The Document Object Model (DOM) represents an HTML document as a tree of objects. JavaScript can use it to access and change HTML elements.
+
+EXAMPLE 1 - Save as dom1.html
+<!DOCTYPE html>
+<html>
+<body>
+<h2 id="title">Old Heading</h2>
+<button onclick="changeText()">Change</button>
+<script>
+function changeText() {
+    document.getElementById("title").textContent = "Welcome to DOM!";
+}
+</script>
+</body>
+</html>
+
+EXAMPLE 2 - Save as dom2.html
+<!DOCTYPE html>
+<html>
+<body>
+<p id="para">JavaScript is easy to learn.</p>
+<button onclick="changeColor()">Change Color</button>
+<script>
+function changeColor() {
+    document.getElementById("para").style.color = "red";
+}
+</script>
+</body>
+</html>
+
+EXAMPLE 3 - Save as dom3.html
+<!DOCTYPE html>
+<html>
+<body>
+<p id="message">This message will disappear.</p>
+<button onclick="hideMessage()">Hide</button>
+<script>
+function hideMessage() {
+    document.getElementById("message").style.display = "none";
+}
+</script>
+</body>
+</html>

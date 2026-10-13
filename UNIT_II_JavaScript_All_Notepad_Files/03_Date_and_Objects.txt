@@ -1,0 +1,102 @@
+TOPIC 3A: DATE OBJECT
+2-MARK DEFINITION:
+The Date object is a built-in JavaScript object used to work with dates and times.
+
+EXAMPLE 1 - Save as date1.html
+<!DOCTYPE html>
+<html>
+<body>
+<p id="result"></p>
+<script>
+let today = new Date();
+document.getElementById("result").textContent = today;
+</script>
+</body>
+</html>
+
+EXAMPLE 2 - Save as date2.html
+<!DOCTYPE html>
+<html>
+<body>
+<p id="result"></p>
+<script>
+let d = new Date();
+let year = d.getFullYear();
+let month = d.getMonth() + 1;
+let day = d.getDate();
+document.getElementById("result").textContent =
+    "Date: " + day + "/" + month + "/" + year;
+</script>
+</body>
+</html>
+
+EXAMPLE 3 - Save as date3.html
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+let birthday = new Date(2000, 0, 15);
+document.write("Day: " + birthday.getDate() + "<br>");
+document.write("Month: " + (birthday.getMonth() + 1) + "<br>");
+document.write("Year: " + birthday.getFullYear());
+</script>
+</body>
+</html>
+
+NOTE: Month index 0 means January, 1 means February, etc.
+
+TOPIC 3B: OBJECTS
+2-MARK DEFINITION:
+An object is a collection of related data and functions stored as properties and methods.
+
+EXAMPLE 1 - Save as object1.html
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+let student = {
+    name: "Arun",
+    age: 20,
+    department: "CSE"
+};
+document.write(student.name + "<br>");
+document.write(student.age + "<br>");
+document.write(student.department);
+</script>
+</body>
+</html>
+
+EXAMPLE 2 - Save as object2.html
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+let book = {
+    title: "JavaScript Basics",
+    price: 300
+};
+book.author = "Ravi";
+book.price = 350;
+document.write(book.title + "<br>");
+document.write(book.author + "<br>");
+document.write(book.price);
+</script>
+</body>
+</html>
+
+EXAMPLE 3 - Save as object3.html
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+let employee = {
+    name: "Kumar",
+    salary: 30000,
+    display: function() {
+        return this.name + " earns " + this.salary;
+    }
+};
+document.write(employee.display());
+</script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+TOPIC 13: HTTP REQUEST
+2-MARK DEFINITION:
+An HTTP request is a message sent by a client, such as a browser, to a server to retrieve or submit information. JavaScript can send requests using Fetch or XMLHttpRequest.
+
+COMMON METHODS:
+GET = retrieve data
+POST = submit data
+PUT = replace/update data
+PATCH = partially update data
+DELETE = delete data
+
+EXAMPLE 1 - FETCH GET - Save as http1.html
+Internet connection required. Uses a public testing API.
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Fetch User Details</h2>
+<button onclick="getUser()">Get User</button>
+<p id="result">Click the button.</p>
+<script>
+async function getUser() {
+    try {
+        let response = await fetch("https://jsonplaceholder.typicode.com/users/1");
+        if (!response.ok) {
+            throw new Error("Request failed");
+        }
+        let user = await response.json();
+        document.getElementById("result").textContent =
+            user.name + " - " + user.email;
+    } catch (error) {
+        document.getElementById("result").textContent =
+            "Unable to retrieve user data.";
+    }
+}
+</script>
+</body>
+</html>
+
+EXAMPLE 2 - FETCH POST - Save as http2.html
+Internet connection required. The testing API simulates creating a post.
+<!DOCTYPE html>
+<html>
+<body>
+<h2>POST Request</h2>
+<button onclick="createPost()">Send Data</button>
+<p id="result"></p>
+<script>
+async function createPost() {
+    try {
+        let response = await fetch("https://jsonplaceholder.typicode.com/posts", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                title: "JavaScript",
+                body: "Learning HTTP requests",
+                userId: 1
+            })
+        });
+        if (!response.ok) {
+            throw new Error("Request failed");
+        }
+        let result = await response.json();
+        document.getElementById("result").textContent =
+            "Created post ID: " + result.id;
+    } catch (error) {
+        document.getElementById("result").textContent =
+            "Error sending data";
+    }
+}
+</script>
+</body>
+</html>
+
+EXAMPLE 3 - XMLHttpRequest - Save as http3.html
+Internet connection required.
+<!DOCTYPE html>
+<html>
+<body>
+<button onclick="loadData()">Load Data</button>
+<p id="result"></p>
+<script>
+function loadData() {
+    let xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://jsonplaceholder.typicode.com/posts/1", true);
+
+    xhr.onload = function() {
+        if (xhr.status >= 200 && xhr.status < 300) {
+            let data = JSON.parse(xhr.responseText);
+            document.getElementById("result").textContent = data.title;
+        } else {
+            document.getElementById("result").textContent = "Request failed";
+        }
+    };
+
+    xhr.onerror = function() {
+        document.getElementById("result").textContent = "Network error";
+    };
+
+    xhr.send();
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+TOPIC 4: REGULAR EXPRESSIONS
+2-MARK DEFINITION:
+A regular expression is a pattern used to search, match, or validate text.
+
+EXAMPLE 1 - Save as regex1.html
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+let pattern = /JavaScript/;
+let text = "I am learning JavaScript";
+document.write(pattern.test(text));
+</script>
+</body>
+</html>
+OUTPUT: true
+
+EXAMPLE 2 - Save as regex2.html
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+let pattern = /\d/;
+document.write(pattern.test("Student123") + "<br>");
+document.write(pattern.test("Student"));
+</script>
+</body>
+</html>
+OUTPUT:
+true
+false
+
+EXAMPLE 3 - Save as regex3.html
+<!DOCTYPE html>
+<html>
+<body>
+<label>Mobile Number:</label>
+<input id="mobile">
+<button onclick="checkMobile()">Check</button>
+<p id="result"></p>
+<script>
+function checkMobile() {
+    let mobile = document.getElementById("mobile").value;
+    let pattern = /^[0-9]{10}$/;
+    if (pattern.test(mobile)) {
+        document.getElementById("result").textContent =
+            "Valid 10-digit number";
+    } else {
+        document.getElementById("result").textContent =
+            "Enter exactly 10 digits";
+    }
+}
+</script>
+</body>
+</html>
+
+USEFUL SYMBOLS:
+^ = beginning of text
+$ = end of text
+\\d = digit
++ = one or more
+* = zero or more
+[0-9] = any digit from 0 to 9
+{10} = exactly ten occurrences

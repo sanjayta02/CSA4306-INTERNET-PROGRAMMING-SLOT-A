@@ -1,0 +1,57 @@
+TOPIC 8: EVENT HANDLING
+2-MARK DEFINITION:
+Event handling executes JavaScript code in response to events such as clicks, mouse movements, keyboard actions, or changes to input values.
+
+EXAMPLE 1 - CLICK EVENT - Save as event1.html
+<!DOCTYPE html>
+<html>
+<body>
+<button onclick="showMessage()">Click Me</button>
+<p id="result"></p>
+<script>
+function showMessage() {
+    document.getElementById("result").textContent =
+        "Button clicked successfully!";
+}
+</script>
+</body>
+</html>
+
+EXAMPLE 2 - MOUSEOVER EVENT - Save as event2.html
+<!DOCTYPE html>
+<html>
+<body>
+<h2 id="heading" onmouseover="changeColor()" onmouseout="resetColor()">
+Move your mouse here
+</h2>
+<script>
+function changeColor() {
+    document.getElementById("heading").style.color = "red";
+}
+function resetColor() {
+    document.getElementById("heading").style.color = "black";
+}
+</script>
+</body>
+</html>
+
+EXAMPLE 3 - CHANGE EVENT - Save as event3.html
+<!DOCTYPE html>
+<html>
+<body>
+<label>Select Department:</label>
+<select id="department" onchange="showDepartment()">
+    <option value="">Choose</option>
+    <option value="CSE">CSE</option>
+    <option value="IT">IT</option>
+    <option value="ECE">ECE</option>
+</select>
+<p id="result"></p>
+<script>
+function showDepartment() {
+    let department = document.getElementById("department").value;
+    document.getElementById("result").textContent = "Selected: " + department;
+}
+</script>
+</body>
+</html>

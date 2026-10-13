@@ -1,0 +1,59 @@
+UNIT II - CLIENT SIDE PROGRAMMING
+QUICK 2-MARK REVISION
+
+1. What is JavaScript?
+JavaScript is a scripting language used to make web pages interactive and dynamic.
+
+2. What is DOM?
+DOM represents an HTML document as a tree of objects that JavaScript can access and modify.
+
+3. What is a Date object?
+A Date object is used to work with dates and times in JavaScript.
+
+4. What is an object?
+An object is a collection of related properties and methods.
+
+5. What is a regular expression?
+A regular expression is a pattern used to search, match, or validate text.
+
+6. What is exception handling?
+Exception handling manages runtime errors using try, catch, finally, and throw.
+
+7. What is form validation?
+Form validation checks user input against specified rules before accepting or submitting it.
+
+8. What are built-in objects?
+Built-in objects are predefined objects such as String, Array, Math, Date, and JSON.
+
+9. What is event handling?
+Event handling executes code in response to events such as clicks, key presses, and changes.
+
+10. What is DHTML?
+DHTML combines HTML, CSS, JavaScript, and DOM to create dynamically changing web pages.
+
+11. What is JSON?
+JSON is a lightweight text-based format used to store and exchange structured data.
+
+12. What is JSON syntax?
+JSON syntax represents data using objects, arrays, key-value pairs, strings, numbers, Booleans, and null.
+
+13. What is a JavaScript function?
+A function is a reusable block of code that performs a particular task.
+
+14. What is an external JavaScript file?
+It stores JavaScript code in a separate .js file linked using the HTML script element.
+
+15. What is an HTTP request?
+An HTTP request is a message sent by a client to a server to retrieve or submit information.
+
+16. What is SQL?
+SQL is a language used to create, retrieve, insert, update, and delete data in relational databases.
+
+IMPORTANT DIFFERENCES:
+HTML vs JavaScript: HTML defines page structure; JavaScript adds behavior.
+DOM vs DHTML: DOM represents the document as objects; DHTML combines technologies to create dynamic pages.
+innerHTML vs textContent: innerHTML reads or sets HTML markup; textContent reads or sets plain text.
+JSON.stringify() vs JSON.parse(): stringify converts a JavaScript value to JSON text; parse converts JSON text to a JavaScript value.
+GET vs POST: GET commonly retrieves data; POST commonly submits data.
+Client-side vs server-side validation: client-side runs in the browser; server-side runs on the server.
+JavaScript vs SQL: JavaScript handles application behavior; SQL manages relational database data.

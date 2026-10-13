@@ -1,0 +1,46 @@
+TOPIC 10: JSON INTRODUCTION
+2-MARK DEFINITION:
+JSON (JavaScript Object Notation) is a lightweight text-based format used to store and exchange structured data between applications.
+
+EXAMPLE 1 - OBJECT TO JSON - Save as json1.html
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+let student = { name: "Arun", age: 20 };
+let jsonData = JSON.stringify(student);
+document.write(jsonData);
+</script>
+</body>
+</html>
+OUTPUT: {"name":"Arun","age":20}
+
+EXAMPLE 2 - JSON TO OBJECT - Save as json2.html
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+let jsonData = '{"name":"Arun","age":20}';
+let student = JSON.parse(jsonData);
+document.write(student.name + "<br>");
+document.write(student.age);
+</script>
+</body>
+</html>
+
+EXAMPLE 3 - JSON ARRAY - Save as json3.html
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+let jsonData = `{
+    "department": "CSE",
+    "students": ["Arun", "Bala", "Devi"]
+}`;
+let data = JSON.parse(jsonData);
+document.write(data.department + "<br>");
+document.write(data.students[0] + "<br>");
+document.write(data.students.length);
+</script>
+</body>
+</html>

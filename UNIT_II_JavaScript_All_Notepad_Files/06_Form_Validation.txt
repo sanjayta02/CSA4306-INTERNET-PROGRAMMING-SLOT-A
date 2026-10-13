@@ -1,0 +1,68 @@
+TOPIC 6: FORM VALIDATION
+2-MARK DEFINITION:
+Form validation checks whether user-entered data satisfies specified rules before it is accepted or submitted.
+
+EXAMPLE 1 - Save as validation1.html
+<!DOCTYPE html>
+<html>
+<body>
+<label>Enter Name:</label>
+<input id="name">
+<button onclick="validateName()">Submit</button>
+<p id="result"></p>
+<script>
+function validateName() {
+    let name = document.getElementById("name").value;
+    if (name.trim() === "") {
+        document.getElementById("result").textContent = "Name is required";
+    } else {
+        document.getElementById("result").textContent = "Welcome " + name;
+    }
+}
+</script>
+</body>
+</html>
+
+EXAMPLE 2 - Save as validation2.html
+<!DOCTYPE html>
+<html>
+<body>
+<input id="email" placeholder="Enter email">
+<button onclick="checkEmail()">Validate</button>
+<p id="result"></p>
+<script>
+function checkEmail() {
+    let email = document.getElementById("email").value;
+    let pattern = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+    if (pattern.test(email)) {
+        document.getElementById("result").textContent = "Email format looks valid";
+    } else {
+        document.getElementById("result").textContent = "Enter a valid email format";
+    }
+}
+</script>
+</body>
+</html>
+
+EXAMPLE 3 - Save as validation3.html
+<!DOCTYPE html>
+<html>
+<body>
+<input id="password" type="password" placeholder="Enter password">
+<button onclick="checkPassword()">Check</button>
+<p id="result"></p>
+<script>
+function checkPassword() {
+    let password = document.getElementById("password").value;
+    if (password.length >= 8) {
+        document.getElementById("result").textContent = "Password length accepted";
+    } else {
+        document.getElementById("result").textContent =
+            "Password must contain at least 8 characters";
+    }
+}
+</script>
+</body>
+</html>
+
+NOTE: Client-side validation is helpful, but the server must also validate data.

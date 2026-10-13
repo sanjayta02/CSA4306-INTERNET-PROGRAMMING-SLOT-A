@@ -1,0 +1,42 @@
+TOPIC 1: INTRODUCTION TO JAVASCRIPT
+2-MARK DEFINITION:
+JavaScript is a scripting programming language used to make web pages interactive and dynamic.
+
+EXAMPLE 1 - Save as example1.html
+<!DOCTYPE html>
+<html>
+<head><title>First JavaScript</title></head>
+<body>
+<h2>My First JavaScript</h2>
+<script>
+    document.write("Welcome to JavaScript!");
+</script>
+</body>
+</html>
+
+EXAMPLE 2 - Save as example2.html
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+    alert("Welcome, Student!");
+</script>
+</body>
+</html>
+
+EXAMPLE 3 - Save as example3.html
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Addition Program</h2>
+<script>
+    let a = 10;
+    let b = 20;
+    let sum = a + b;
+    document.write("Sum = " + sum);
+</script>
+</body>
+</html>
+
+EXPECTED OUTPUT FOR EXAMPLE 3:
+Sum = 30
