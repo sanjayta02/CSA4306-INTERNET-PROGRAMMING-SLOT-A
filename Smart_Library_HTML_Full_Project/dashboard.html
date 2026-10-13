@@ -1,0 +1,6 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>My Dashboard | Smart Library</title><link rel="stylesheet" href="style.css"></head>
+<body><header class="navbar"><a class="brand" href="index.html">📚 Smart Library</a><nav><a href="catalog.html">Catalog</a><a href="contact.html">Contact</a><span id="navAuth"></span></nav></header>
+<main class="container page"><div class="page-title"><h1>My Library Dashboard</h1><p id="welcome"></p></div><div id="userStats" class="stats"></div>
+<section class="panel"><h2>Currently Borrowed</h2><div class="table-wrap"><table><thead><tr><th>Book</th><th>Issue Date</th><th>Due Date</th><th>Status</th><th>Action</th></tr></thead><tbody id="active"></tbody></table></div></section>
+<section class="panel"><h2>Borrowing History</h2><div class="table-wrap"><table><thead><tr><th>Book</th><th>Issue</th><th>Due</th><th>Returned</th><th>Fine</th><th>Status</th></tr></thead><tbody id="history"></tbody></table></div></section></main>
+<footer>© 2026 Smart Library Management System</footer><script src="app.js"></script><script>initDashboard();</script></body></html>

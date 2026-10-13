@@ -1,0 +1,8 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Book Catalog | Smart Library</title><link rel="stylesheet" href="style.css"></head>
+<body><header class="navbar"><a class="brand" href="index.html">📚 Smart Library</a><nav><a href="index.html">Home</a><a class="active" href="catalog.html">Catalog</a><a href="contact.html">Contact</a><span id="navAuth"></span></nav></header>
+<main class="container page"><div class="page-title"><h1>Book Catalog</h1><p>Search the complete library collection.</p></div>
+<div class="searchbar"><input id="search" placeholder="Search title, author, ISBN or category..." oninput="renderCatalog()"><select id="category" onchange="renderCatalog()"><option value="">All categories</option></select></div>
+<div id="catalog" class="grid books"></div></main><footer>© 2026 Smart Library Management System</footer>
+<script src="app.js"></script><script>initCatalog();</script></body></html>

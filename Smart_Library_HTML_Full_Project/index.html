@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Smart Library Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="brand" href="index.html">📚 Smart Library</a>
+  <nav>
+    <a href="index.html">Home</a><a href="catalog.html">Catalog</a><a href="contact.html">Contact</a>
+    <span id="navAuth"></span>
+  </nav>
+</header>
+<main>
+<section class="hero"><div class="container">
+  <div class="hero-content">
+    <span class="pill">COLLEGE LIBRARY PLATFORM</span>
+    <h1>Find. Borrow.<br><span>Manage Smarter.</span></h1>
+    <p>A complete browser-based library management system for students and library managers to search books, track borrowing, calculate fines, and manage inventory.</p>
+    <div class="actions"><a class="btn light" href="catalog.html">Explore Catalog</a><a class="btn outline" href="register.html">Create Account</a></div>
+  </div>
+</div></section>
+<section class="stats container" id="stats"></section>
+<section class="container section"><div class="section-head"><div><h2>Featured Books</h2><p>Explore books currently available in the library.</p></div><a href="catalog.html">View all →</a></div><div class="grid books" id="featured"></div></section>
+<section class="container section"><div class="feature-grid">
+<div class="feature"><b>🔎 Smart Search</b><p>Search by title, author, ISBN, or category.</p></div>
+<div class="feature"><b>📖 Borrow & Return</b><p>Track issues, returns, due dates, and borrowing history.</p></div>
+<div class="feature"><b>₹ Fine Calculation</b><p>Automatically calculate overdue fines at ₹5 per day.</p></div>
+<div class="feature"><b>📊 Admin Control</b><p>Manage books, students, inventory, and transactions.</p></div>
+</div></section>
+</main>
+<footer>© 2026 Smart Library Management System · Books · Borrowing · Fines · Administration</footer>
+<script src="app.js"></script><script>initHome();</script>
+</body></html>
