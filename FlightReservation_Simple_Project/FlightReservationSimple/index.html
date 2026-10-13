@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkyBook | Flight Reservation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home">✈ SkyBook</a>
+    <nav>
+      <a href="#search">Search Flights</a>
+      <a href="#mytickets">My Tickets</a>
+      <a href="#admin">Admin</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">YOUR JOURNEY STARTS HERE</p>
+        <h1>Find your next<br /><span>great escape.</span></h1>
+        <p class="hero-copy">Search flights, book your seat, and keep your trip details in one simple place.</p>
+        <a class="button primary" href="#search">Search Flights</a>
+      </div>
+      <div class="plane-art" aria-hidden="true">✈</div>
+    </section>
+
+    <section id="search" class="section">
+      <div class="section-heading"><div><p class="eyebrow">PLAN YOUR TRIP</p><h2>Search flights</h2></div><p class="muted">Choose your route and travel date.</p></div>
+      <form id="searchForm" class="search-card">
+        <label>From<select id="from" required><option value="">Select origin</option><option>Chennai</option><option>Bengaluru</option><option>Mumbai</option><option>Delhi</option><option>Hyderabad</option></select></label>
+        <label>To<select id="to" required><option value="">Select destination</option><option>Chennai</option><option>Bengaluru</option><option>Mumbai</option><option>Delhi</option><option>Hyderabad</option><option>Kochi</option></select></label>
+        <label>Departure date<input id="date" type="date" required /></label>
+        <label>Class<select id="travelClass"><option>Economy</option><option>Business</option></select></label>
+        <button class="button primary" type="submit">Find Flights</button>
+      </form>
+      <div id="flightResults" class="flight-list" aria-live="polite"></div>
+    </section>
+
+    <section id="mytickets" class="section soft-section">
+      <div class="section-heading"><div><p class="eyebrow">YOUR BOOKINGS</p><h2>My tickets</h2></div><p class="muted">Your bookings are saved in this browser.</p></div>
+      <div id="ticketList" class="ticket-list"></div>
+    </section>
+
+    <section id="admin" class="section">
+      <div class="section-heading"><div><p class="eyebrow">MANAGEMENT</p><h2>Admin report</h2></div><p class="muted">A simple local booking overview.</p></div>
+      <div class="stats"><div class="stat-card"><span>Total bookings</span><strong id="totalBookings">0</strong></div><div class="stat-card"><span>Active tickets</span><strong id="activeBookings">0</strong></div><div class="stat-card"><span>Cancelled tickets</span><strong id="cancelledBookings">0</strong></div></div>
+      <div class="admin-table-wrap"><table><thead><tr><th>Ticket ID</th><th>Passenger</th><th>Route</th><th>Date</th><th>Status</th></tr></thead><tbody id="adminRows"><tr><td colspan="5" class="empty">No bookings yet.</td></tr></tbody></table></div>
+    </section>
+  </main>
+
+  <footer><span>✈ SkyBook Flight Reservation System</span><span>Internet Programming Lab Mini Project</span></footer>
+
+  <dialog id="bookingDialog">
+    <form id="bookingForm" class="dialog-form">
+      <button type="button" class="close-dialog" id="closeDialog" aria-label="Close">×</button>
+      <p class="eyebrow">COMPLETE YOUR BOOKING</p><h2>Passenger details</h2>
+      <p id="selectedFlightInfo" class="muted"></p>
+      <input type="hidden" id="selectedFlightId" />
+      <label>Full name<input id="passengerName" type="text" required placeholder="Enter passenger name" /></label>
+      <label>Email address<input id="passengerEmail" type="email" required placeholder="you@example.com" /></label>
+      <label>Phone number<input id="passengerPhone" type="tel" required pattern="[0-9+() -]{7,18}" placeholder="Enter phone number" /></label>
+      <label>Seat preference<select id="seatPreference"><option>Window</option><option>Aisle</option><option>No preference</option></select></label>
+      <div class="payment-note"><strong>Demo payment</strong><span>Click Book & Pay to simulate a successful payment. No real payment is taken.</span></div>
+      <button class="button primary full-width" type="submit">Book &amp; Pay</button>
+    </form>
+  </dialog>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
