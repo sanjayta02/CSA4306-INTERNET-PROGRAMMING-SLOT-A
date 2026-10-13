@@ -1,0 +1,19 @@
+CSA43 - INTERNET PROGRAMMING - UNIT I
+PROGRAM 8: EMBED AUDIO IN HTML5
+Aim: Embed an audio file with browser playback controls.
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>HTML5 Audio</title></head>
+<body>
+    <h1>HTML5 Audio Example</h1>
+    <audio controls>
+        <source src="birds.mp3" type="audio/mpeg">
+        <source src="birds.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+    <p>Place birds.mp3 or birds.ogg in the same folder as this HTML file.</p>
+</body>
+</html>
+
+Expected result: Audio controls are displayed. Playback requires a supported audio file.

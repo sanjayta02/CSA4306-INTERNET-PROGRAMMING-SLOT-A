@@ -1,0 +1,19 @@
+CSA43 - INTERNET PROGRAMMING - UNIT I
+PROGRAM 9: EMBED VIDEO IN HTML5
+Aim: Embed a video file with browser playback controls.
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>HTML5 Video</title></head>
+<body>
+    <h1>HTML5 Video Example</h1>
+    <video width="480" height="270" controls>
+        <source src="sample.mp4" type="video/mp4">
+        <source src="sample.ogv" type="video/ogg">
+        Your browser does not support the video element.
+    </video>
+    <p>Place sample.mp4 or sample.ogv in the same folder as this HTML file.</p>
+</body>
+</html>
+
+Expected result: Video controls are displayed. Playback requires a supported video file.

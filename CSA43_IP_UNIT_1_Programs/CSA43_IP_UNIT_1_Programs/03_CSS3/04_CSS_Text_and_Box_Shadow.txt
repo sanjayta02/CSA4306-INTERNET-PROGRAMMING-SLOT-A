@@ -1,0 +1,28 @@
+CSA43 - INTERNET PROGRAMMING - UNIT I
+PROGRAM 16: CSS TEXT SHADOW AND BOX SHADOW
+Aim: Apply text-shadow to text and box-shadow to a container.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Shadows</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 30px; }
+        h1 { text-shadow: 2px 2px 5px crimson; }
+        .card {
+            width: 300px;
+            padding: 25px;
+            background: white;
+            border: 1px solid #ddd;
+            box-shadow: 1px 1px 5px 3px grey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text Shadow Example</h1>
+    <div class="card"><h2>Box Shadow</h2><p>This box has a soft shadow.</p></div>
+</body>
+</html>
+
+Expected result: The heading has a text shadow and the card has a box shadow.

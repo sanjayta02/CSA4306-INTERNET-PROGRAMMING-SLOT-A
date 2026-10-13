@@ -1,0 +1,34 @@
+CSA43 - INTERNET PROGRAMMING - UNIT I
+PROGRAM 18: CSS TRANSITION
+Aim: Demonstrate a smooth transition when the mouse hovers over a box and when a text input receives focus.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Transition</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 80px;
+            background-color: steelblue;
+            transition: width 2s ease;
+        }
+        .box:hover { width: 300px; }
+        input[type="text"] {
+            width: 120px;
+            transition: width .35s ease-in-out;
+        }
+        input[type="text"]:focus { width: 250px; }
+    </style>
+</head>
+<body>
+    <h1>CSS Transition Example</h1>
+    <p>Move the mouse over the blue box.</p>
+    <div class="box"></div>
+    <p>Click the search field and type:</p>
+    <input type="text" placeholder="Search">
+</body>
+</html>
+
+Expected result: The box expands on hover and the input expands when focused.

@@ -1,0 +1,25 @@
+CSA43 - INTERNET PROGRAMMING - UNIT I
+PROGRAM 4: ORDERED, UNORDERED, AND DESCRIPTION LISTS
+Aim: Demonstrate the three common HTML list types.
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>HTML Lists</title></head>
+<body>
+    <h1>HTML Lists</h1>
+    <h2>Unordered List - Subjects</h2>
+    <ul><li>Internet Programming</li><li>Computer Networks</li><li>Database Systems</li></ul>
+
+    <h2>Ordered List - Steps to Open a Website</h2>
+    <ol><li>Open a browser</li><li>Enter a URL</li><li>Press Enter</li></ol>
+
+    <h2>Description List - Web Terms</h2>
+    <dl>
+        <dt>HTML</dt><dd>Defines the structure of a web page.</dd>
+        <dt>CSS</dt><dd>Controls the presentation of a web page.</dd>
+        <dt>HTTP</dt><dd>Transfers web resources between client and server.</dd>
+    </dl>
+</body>
+</html>
+
+Expected result: Unordered, ordered, and description lists are displayed.

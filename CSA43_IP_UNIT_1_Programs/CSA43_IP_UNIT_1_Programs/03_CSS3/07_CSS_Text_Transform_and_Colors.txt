@@ -1,0 +1,29 @@
+CSA43 - INTERNET PROGRAMMING - UNIT I
+PROGRAM 19: CSS TEXT FORMATTING, TRANSFORM, AND COLORS
+Aim: Demonstrate text formatting, color, and a simple transform.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Text and Transform</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f0f8ff; }
+        h1 { color: darkblue; text-transform: uppercase; }
+        p { color: #333333; line-height: 1.6; }
+        .rotate {
+            display: inline-block;
+            padding: 15px;
+            background-color: orange;
+            transform: rotate(-3deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Text Formatting</h1>
+    <p>This paragraph demonstrates text color, line spacing, and font family.</p>
+    <div class="rotate">Transformed element</div>
+</body>
+</html>
+
+Expected result: A styled heading and paragraph appear with a slightly rotated orange box.

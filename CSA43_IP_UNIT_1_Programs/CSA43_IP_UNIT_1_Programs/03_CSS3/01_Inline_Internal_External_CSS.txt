@@ -1,0 +1,28 @@
+CSA43 - INTERNET PROGRAMMING - UNIT I
+PROGRAM 13: INLINE, INTERNAL, AND EXTERNAL CSS
+Aim: Demonstrate inline and internal CSS. The external stylesheet example is shown in comments.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Types</title>
+    <style>
+        /* Internal CSS */
+        h2 { color: blue; }
+        p { font-family: Arial, sans-serif; }
+    </style>
+    <!-- For external CSS, create style.css and add:
+         body { background-color: #f2f2f2; }
+         Then uncomment the line below:
+         <link rel="stylesheet" href="style.css">
+    -->
+</head>
+<body>
+    <h1 style="color: red;">This heading uses inline CSS</h1>
+    <h2>This heading uses internal CSS</h2>
+    <p>This paragraph is styled by an internal CSS rule.</p>
+</body>
+</html>
+
+Expected result: The first heading is red, the second is blue, and the paragraph uses Arial.

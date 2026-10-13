@@ -1,0 +1,19 @@
+CSA43 - INTERNET PROGRAMMING - UNIT I
+PROGRAM 2: BASIC HTML5 WEB PAGE
+Aim: Create a basic HTML5 document with a heading, paragraph, and hyperlink.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to Internet Programming</h1>
+    <p>This is my first HTML5 web page.</p>
+    <a href="https://www.example.com">Visit Example Website</a>
+</body>
+</html>
+
+Expected result: A heading, paragraph, and clickable hyperlink appear in the browser.

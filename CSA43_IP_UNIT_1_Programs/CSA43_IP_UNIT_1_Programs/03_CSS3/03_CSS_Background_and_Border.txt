@@ -1,0 +1,32 @@
+CSA43 - INTERNET PROGRAMMING - UNIT I
+PROGRAM 15: CSS BACKGROUND AND BORDER
+Aim: Demonstrate background color, background image, and border shorthand.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Background and Border</title>
+    <style>
+        body {
+            background-color: lightblue;
+            /* Optional: add paper.gif in the same folder and uncomment:
+            background-image: url("paper.gif");
+            background-repeat: repeat;
+            */
+        }
+        p {
+            background: #ffffff;
+            border: 5px solid red;
+            padding: 15px;
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Background and Border</h1>
+    <p>This paragraph has a white background and a five-pixel solid red border.</p>
+</body>
+</html>
+
+Expected result: The page has a light-blue background and the paragraph has a red border.

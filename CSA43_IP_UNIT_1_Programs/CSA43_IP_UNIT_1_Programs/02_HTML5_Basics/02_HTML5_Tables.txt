@@ -1,0 +1,35 @@
+CSA43 - INTERNET PROGRAMMING - UNIT I
+PROGRAM 3: HTML TABLE WITH HEADER, BODY, AND FOOTER
+Aim: Display data in rows and columns using HTML table elements.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Marks</title>
+    <style>
+        table { border-collapse: collapse; width: 60%; }
+        th, td { border: 1px solid black; padding: 8px; text-align: left; }
+        th { background-color: lightblue; }
+        tfoot { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Student Marks</h1>
+    <table>
+        <thead>
+            <tr><th>Roll No.</th><th>Name</th><th>Marks</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>Arun</td><td>85</td></tr>
+            <tr><td>2</td><td>Priya</td><td>92</td></tr>
+            <tr><td>3</td><td>Kumar</td><td>78</td></tr>
+        </tbody>
+        <tfoot>
+            <tr><td colspan="2">Class Average</td><td>85</td></tr>
+        </tfoot>
+    </table>
+</body>
+</html>
+
+Expected result: A bordered student-marks table with a header and footer.

@@ -1,0 +1,15 @@
+CSA43 - INTERNET PROGRAMMING - UNIT I
+PROGRAM 5: INSERT IMAGES IN HTML
+Aim: Display an image using the HTML img element.
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>HTML Image</title></head>
+<body>
+    <h1>HTML Image Example</h1>
+    <p>Place an image named sample.jpg in the same folder as this file.</p>
+    <img src="sample.jpg" alt="Sample landscape" width="400" height="250">
+</body>
+</html>
+
+Expected result: The image appears if sample.jpg is available in the same folder. If not, the alternative text is shown.

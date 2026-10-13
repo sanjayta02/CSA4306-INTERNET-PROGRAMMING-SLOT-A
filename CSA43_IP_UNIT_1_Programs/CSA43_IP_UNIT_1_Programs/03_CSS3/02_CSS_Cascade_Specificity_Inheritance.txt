@@ -1,0 +1,31 @@
+CSA43 - INTERNET PROGRAMMING - UNIT I
+PROGRAM 14: CSS CASCADE, SPECIFICITY, AND INHERITANCE
+Aim: Show how source order, selector specificity, and inheritance affect styles.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Cascade</title>
+    <style>
+        /* Same specificity: the later rule wins, so h1 becomes blue. */
+        h1 { color: red; }
+        h1 { color: blue; }
+
+        /* Class selector is more specific than the element selector. */
+        h2 { color: blue; }
+        .main-heading { color: crimson; }
+
+        /* Body color is inherited by normal text descendants. */
+        body { font-family: Arial, sans-serif; color: green; }
+        span { color: black; }
+    </style>
+</head>
+<body>
+    <h1>Cascade Example: Blue</h1>
+    <h2 class="main-heading">Specificity Example: Crimson</h2>
+    <p>This paragraph inherits green text from the body. This <span>span is black</span>.</p>
+</body>
+</html>
+
+Expected result: H1 is blue, H2 is crimson, paragraph text is green, and span text is black.

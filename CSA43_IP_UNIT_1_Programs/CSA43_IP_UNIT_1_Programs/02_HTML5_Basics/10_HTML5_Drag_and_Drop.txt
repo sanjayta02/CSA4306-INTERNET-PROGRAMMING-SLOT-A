@@ -1,0 +1,33 @@
+CSA43 - INTERNET PROGRAMMING - UNIT I
+PROGRAM 11: HTML5 DRAG AND DROP
+Aim: Drag an item into a drop area using HTML5 drag-and-drop events.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drag and Drop</title>
+    <style>
+        #dropzone { width: 320px; height: 150px; padding: 15px; border: 2px dashed #333; }
+        #item { width: 140px; padding: 15px; background: lightblue; cursor: move; }
+    </style>
+    <script>
+        function allowDrop(event) { event.preventDefault(); }
+        function drag(event) { event.dataTransfer.setData("text", event.target.id); }
+        function drop(event) {
+            event.preventDefault();
+            const id = event.dataTransfer.getData("text");
+            event.currentTarget.appendChild(document.getElementById(id));
+        }
+    </script>
+</head>
+<body>
+    <h1>HTML5 Drag and Drop</h1>
+    <p>Drag the blue box into the dashed area.</p>
+    <div id="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)">Drop here</div>
+    <br>
+    <div id="item" draggable="true" ondragstart="drag(event)">Drag this item</div>
+</body>
+</html>
+
+Expected result: The blue box can be dragged into the dashed drop area.

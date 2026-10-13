@@ -1,0 +1,31 @@
+CSA43 - INTERNET PROGRAMMING - UNIT I
+PROGRAM 1: CLIENT-SERVER AND HTTP OVERVIEW
+Aim: Demonstrate the basic client-server request/response idea using a simple HTML page.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Client Server Demo</title>
+</head>
+<body>
+    <h1>Client-Server Communication</h1>
+    <p>The browser is the client. It requests this page from a web server.</p>
+    <p>The web server returns the HTML response for the browser to display.</p>
+    <h2>HTTP methods</h2>
+    <ul>
+        <li>GET - requests a resource</li>
+        <li>POST - sends data to a server</li>
+    </ul>
+    <h2>Common HTTP status codes</h2>
+    <ul>
+        <li>200 OK - request succeeded</li>
+        <li>301 Moved Permanently - resource has a new URL</li>
+        <li>403 Forbidden - access is not allowed</li>
+        <li>404 Not Found - resource was not found</li>
+        <li>500 Internal Server Error - server encountered an error</li>
+    </ul>
+</body>
+</html>
+
+Expected result: A page describing the client-server model, HTTP methods, and status codes.

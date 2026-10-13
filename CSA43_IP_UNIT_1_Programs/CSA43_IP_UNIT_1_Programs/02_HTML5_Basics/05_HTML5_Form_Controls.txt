@@ -1,0 +1,51 @@
+CSA43 - INTERNET PROGRAMMING - UNIT I
+PROGRAM 6: HTML FORM AND INPUT CONTROLS
+Aim: Create a form using text, password, radio, checkbox, select, textarea, file, submit, and reset controls.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h1>Student Registration</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        Gender:
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br><br>
+
+        Interests:
+        <input type="checkbox" id="html" name="interest" value="HTML">
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="interest" value="CSS">
+        <label for="css">CSS</label><br><br>
+
+        <label for="course">Course:</label>
+        <select id="course" name="course">
+            <option value="IP">Internet Programming</option>
+            <option value="CN">Computer Networks</option>
+            <option value="DBMS">Database Systems</option>
+        </select><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="35"></textarea><br><br>
+
+        <label for="file">Upload a file:</label>
+        <input type="file" id="file" name="file"><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
+
+Expected result: A registration form with the listed controls. Submit does not store data because no server-side action is configured.
